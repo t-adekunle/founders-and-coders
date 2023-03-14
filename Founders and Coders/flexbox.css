@@ -5,13 +5,8 @@
         justify-content: space-between;
         padding: 0;
         margin: 0;
-        list-style: none;
-        
-
+        list-style: none;     
 }
-
-
-
 .card {
                 flex: 0 1 24%;
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -19,17 +14,11 @@
                 border-radius: 5px; 
                 flex-grow: 2;
                 padding: 5px;
-            
-                
+                margin-top: 10px;
+                border: 1px solid #D5ACA6;
+                background-color: #fef7f6; 
               }
-.h4     {
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 1.3em;
-                text-align: center;
-                
-}
 @media screen and (max-width: 40em) {
-       
         .card { 
                 flex: 0 1 calc(100% - 1em);
 
@@ -48,29 +37,52 @@
 
 }
 .collapse {
-        background-color: #EE4E34;
+        background-color: #ccc;
         color:#12263A;
         cursor: pointer;
-        padding: 18px;
+        padding: 0px;
         width: 100%;
         border: none;
-        text-align: left;
+        text-align: center;
         outline: none;
-        font-size: 15px;
+        font-size: 1.2em;
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: underline;
+        font-weight: bold;
+        border-radius: 5px;
+        
 }
-.active
-.collapse:hover {
-        background-color: #ccc;
+.active, .collapse:hover {
+        background-color: #807e7e;
 }
 
 .text {
         padding: 0 18px;
         display: none;
         overflow: hidden;
-        background-color: #FCEDDA;
+        background-color: #fef7f6;
         font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        color: #12263A;      
 }
 
+h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps;
+        font-size: 3em;
+        text-align: center;
+        color: #12263A;
+             
+}
+
+h3 {
+        font-family: 'Courier New', Courier, monospace;
+        font-variant: small-caps;
+        font-size: 1.7em;
+        color: #12263A;
+        text-align: center;           
+}
 
         
 
