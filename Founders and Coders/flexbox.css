@@ -70,7 +70,7 @@
 h1 {
         font-family: 'Courier New', Courier, monospace;
         font-variant: small-caps;
-        font-size: 3em;
+        font-size: 3.5em;
         text-align: center;
         color: #12263A;
              
@@ -79,7 +79,7 @@ h1 {
 h3 {
         font-family: 'Courier New', Courier, monospace;
         font-variant: small-caps;
-        font-size: 1.7em;
+        font-size: 2em;
         color: #12263A;
         text-align: center;           
 }
