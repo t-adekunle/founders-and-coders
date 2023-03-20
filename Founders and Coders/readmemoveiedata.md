@@ -1,0 +1,3 @@
+Debugging 
+
+spelling mistakes 
