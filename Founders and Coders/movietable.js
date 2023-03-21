@@ -65,10 +65,10 @@ const secondPlot = plots[1];
 const thirdPlot = plots [2];
 const fourthPlot = plots [3];
 
-firstPlot.textContent =(movieData["The Darjeeling Limited"].plot).replace('"','');             //print plot and replace quotation marks with nothing, removing the quotation marks
-secondPlot.textContent =(movieData["The Royal Tenenbaums"].plot).replace('"',''); 
-thirdPlot.textContent =(movieData["Fantastic Mr. Fox"].plot).replace('"',''); 
-fourthPlot.textContent =(movieData["The Grand Budapest Hotel"].plot).replace('"',''); 
+firstPlot.textContent = (movieData["The Darjeeling Limited"].plot).replace('"','');             //print plot and replace quotation marks with nothing, removing the quotation marks
+secondPlot.textContent = (movieData["The Royal Tenenbaums"].plot).replace('"',''); 
+thirdPlot.textContent = (movieData["Fantastic Mr. Fox"].plot).replace('"',''); 
+fourthPlot.textContent = (movieData["The Grand Budapest Hotel"].plot).replace('"',''); 
 
 const ratings = document.getElementsByClassName('rating');
 
@@ -77,10 +77,10 @@ const secondRating = ratings[1];
 const thirdRating = ratings[2];
 const fourthRating = ratings[3];
 
-firstRating.textContent = " " + JSON.stringify(movieData["The Darjeeling Limited"].rating);
-secondRating.textContent = " " + JSON.stringify(movieData["The Royal Tenenbaums"].rating);
-thirdRating.textContent = " " + JSON.stringify(movieData["Fantastic Mr. Fox"].rating);
-fourthRating.textContent = " " +  JSON.stringify(movieData["The Grand Budapest Hotel"].rating);
+firstRating.textContent = JSON.stringify(movieData["The Darjeeling Limited"].rating);
+secondRating.textContent = JSON.stringify(movieData["The Royal Tenenbaums"].rating);
+thirdRating.textContent = JSON.stringify(movieData["Fantastic Mr. Fox"].rating);
+fourthRating.textContent = JSON.stringify(movieData["The Grand Budapest Hotel"].rating);
 
 const years = document.getElementsByClassName('year');
 
@@ -89,10 +89,10 @@ const secondYear = years[1];
 const thirdYear = years[2];
 const fourthYear = years[3];
 
-firstYear.textContent = " " +  JSON.stringify(movieData["The Darjeeling Limited"].year);
-secondYear.textContent = " " + JSON.stringify(movieData["The Royal Tenenbaums"].year);
-thirdYear.textContent = " " + JSON.stringify(movieData["Fantastic Mr. Fox"].year);
-fourthYear.textContent = " " + JSON.stringify(movieData["The Grand Budapest Hotel"].year);
+firstYear.textContent = JSON.stringify(movieData["The Darjeeling Limited"].year);
+secondYear.textContent = JSON.stringify(movieData["The Royal Tenenbaums"].year);
+thirdYear.textContent = JSON.stringify(movieData["Fantastic Mr. Fox"].year);
+fourthYear.textContent = JSON.stringify(movieData["The Grand Budapest Hotel"].year);
 
 const runtimes = document.getElementsByClassName('runtime');
 
@@ -101,10 +101,10 @@ secondRunTime = runtimes [1];
 thirdRunTime = runtimes[2];
 fourthRunTime = runtimes[3];
 
-firstRunTime.textContent = " " + JSON.stringify(movieData["The Darjeeling Limited"].runtime);
-secondRunTime.textContent = " " + JSON.stringify(movieData["The Royal Tenenbaums"].runtime);
-thirdRunTime.textContent = " " + JSON.stringify(movieData["Fantastic Mr. Fox"].runtime);
-fourthRunTime.textContent = " " + JSON.stringify(movieData["The Grand Budapest Hotel"].runtime);
+firstRunTime.textContent = JSON.stringify(movieData["The Darjeeling Limited"].runtime);
+secondRunTime.textContent = JSON.stringify(movieData["The Royal Tenenbaums"].runtime);
+thirdRunTime.textContent = JSON.stringify(movieData["Fantastic Mr. Fox"].runtime);
+fourthRunTime.textContent = JSON.stringify(movieData["The Grand Budapest Hotel"].runtime);
 
 const castList = document.getElementsByClassName('cast');
 
@@ -143,28 +143,6 @@ var coll = document.getElementsByClassName('collapse');
         }
     });
     }
-
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 
 
